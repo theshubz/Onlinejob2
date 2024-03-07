@@ -22,6 +22,7 @@ switch ($view) {
         $_SESSION['accounts']	='active' ;
         $content ='Profile.php';
 		break;
+	
 	 
 	default : 
 	    $title="Profile";	
