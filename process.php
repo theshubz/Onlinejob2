@@ -209,7 +209,7 @@ function doLogin(){
 	$h_upass = sha1($upass);
  
  
-    $applicant = new ApplicantS();
+    $applicant = new Applicants();
     
     $res = $applicant->applicantAuthentication($email, $h_upass);
     if ($res==true) { 
