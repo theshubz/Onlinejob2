@@ -43,6 +43,8 @@
                           
                         
                           <a href="index.php?q=register" class="text-center">New User ? Register first</a>
+                          <br><br>
+                          <a href="theshubz/Onlinejob/admin/login.php" class="text-center">ADMIN LOGIN PAGE</a>
 
                         </div>
                        
