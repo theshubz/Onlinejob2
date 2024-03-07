@@ -100,13 +100,13 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="<?php echo !isset($_GET['q'])? 'active' :''?>"><a href="index.php"><h4>Home</h4></a></li> 
-                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='About'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="index.php?q=About"><h4>About Us<h4></a></li>
+                        <li class="<?php echo !isset($_GET['q'])? 'active' :''?>"><a href="index.php"><h5>Home</h5></a></li> 
+                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='About'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="index.php?q=About"><h5>About Us<h5></a></li>
 
-						<li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='hiring'){ echo 'active'; }else{ echo ''; }} ?>"><a href="index.php?q=hiring"><h4>Hiring Now</h4></a></li>
+						<li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='hiring'){ echo 'active'; }else{ echo ''; }} ?>"><a href="index.php?q=hiring"><h5>Hiring Now</h5></a></li>
 
                       <li class="dropdown <?php  if(isset($_GET['q'])) { if($_GET['q']=='category'){ echo 'active'; }else{ echo ''; }}  ?>">
-                          <a href="#" data-toggle="dropdown" class="dropdown-toggle"><h4>Popular Jobs </h4><b class="caret"></b></a>
+                          <a href="#" data-toggle="dropdown" class="dropdown-toggle"><h5>Popular Jobs </h5><b class="caret"></b></a>
                           <ul class="dropdown-menu">
                             <?php 
                             $sql = "SELECT * FROM `tblcategory` LIMIT 10";
@@ -135,9 +135,9 @@
                             ?> 
                           </ul>
                        </li> 
-                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='company'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="index.php?q=company"><h4>Company</h4></a></li>
+                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='company'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="index.php?q=company"><h5>Company</h5></a></li>
                         <li class="dropdown">
-                          <a href="#" data-toggle="dropdown" class="dropdown-toggle"><h4>Job Search</h4> <b class="caret"></b></a>
+                          <a href="#" data-toggle="dropdown" class="dropdown-toggle"><h5>Job Search</h5> <b class="caret"></b></a>
                           <ul class="dropdown-menu">
                               <li><a href="index.php?q=search-company">Job By Company</a></li>
                           
