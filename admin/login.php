@@ -4,7 +4,7 @@ require_once("../include/initialize.php");
  ?>
   <?php
   if(isset($_SESSION['ADMIN_USERID'])){
-    redirect("admin/index.php");
+    redirect("index.php");
   }
   ?>
    

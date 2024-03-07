@@ -25,9 +25,8 @@
 
         <link rel="stylesheet" href="plugins/dataTables/jquery.dataTables.min.css">  
 
-
         
-        <link rel="stylesheet" href=">plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+        <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
  
     </head>
 
