@@ -1,6 +1,6 @@
 <?php   
     $view = isset($_GET['view']) ? $_GET['view'] :"";  
-	  $appl = New Applicants();
+	  $appl = New Applicant();
 	  $applicant = $appl->single_applicant($_SESSION['APPLICANTID']); 
   ?>
   <style type="text/css">
