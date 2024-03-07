@@ -219,7 +219,7 @@ function doLogin(){
          redirect("index.php");
      	
     }else{
-    	 echo "Account does not exist! Please contact Administrator."; 
+    	 echo "Invalid!! 'Username' and 'Password' "; 
     } 
 }
  
