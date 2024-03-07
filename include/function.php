@@ -40,8 +40,8 @@
 		if(file_exists($path)){
 			require_once($path);
 		}else{
-			require_once($path);
-			//die("The file {$class_name}.php could not be found.");
+			
+		die("The file {$class_name}.php could not be found.");
 		}
 					
 	}
