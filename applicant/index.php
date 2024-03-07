@@ -1,6 +1,6 @@
 <?php 
 require_once("../include/initialize.php");  
-if (!isset($_SESSION['APPLICANTID'])) {
+if (isset($_SESSION['APPLICANTID'])) {
 	redirect('index.php');
 }
 $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
