@@ -215,7 +215,7 @@ function doLogin(){
 
        	message("You are now successfully login!","success");
      
-         redirect("applicant/");
+         redirect("include/applicant/");
      
     }else{
     	 echo "Account does not exist! Please contact Administrator."; 
