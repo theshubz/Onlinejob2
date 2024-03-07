@@ -1,6 +1,6 @@
 <?php   
     $view = isset($_GET['view']) ? $_GET['view'] :"";  
-	  $appl = New Applicant();
+	  $appl = New Applicants();
 	  $applicant = $appl->single_applicant($_SESSION['APPLICANTID']); 
   ?>
   <style type="text/css">
@@ -32,7 +32,7 @@
            <div class="panel panel-default">            
             <div class="panel-body"> 
               <div  id="image-container">
-                <img title="profile image"  data-target="#myModal"  data-toggle="modal"  src="<?php echo web_root.'applicant/'.$applicant->APPLICANTPHOTO; ?>">  
+                <img title="profile image"  data-target="#myModal"  data-toggle="modal"  src="'applicant/'.$applicant->APPLICANTPHOTO; ?>">  
               </div>
              </div>
           <ul class="list-group">
@@ -50,9 +50,9 @@
           <div class="box box-solid">  
             <div class="box-body no-padding">
               <ul class="nav nav-pills nav-stacked"> 
-                <li class="<?php echo ($view=='appliedjobs' || $view=='') ? 'active': '';?>"><a href="<?php echo web_root.'applicant/index.php?view=appliedjobs'; ?>"><i class="fa fa-list"></i> Applied Jobs
+                <li class="<?php echo ($view=='appliedjobs' || $view=='') ? 'active': '';?>"><a href="'applicant/index.php?view=appliedjobs'; ?>"><i class="fa fa-list"></i> Applied Jobs
                    </a></li>
-                  <li class="<?php echo ($view=='accounts') ? 'active': '';?>"><a href="<?php echo web_root.'applicant/index.php?view=accounts'; ?>"><i class="fa fa-user"></i> Accounts </a></li>
+                  <li class="<?php echo ($view=='accounts') ? 'active': '';?>"><a href="'applicant/index.php?view=accounts'; ?>"><i class="fa fa-user"></i> Accounts </a></li>
                 <li class="<?php echo ($view=='message') ? 'active': '';?>"><a href="<?php echo web_root.'applicant/index.php?view=message'; ?>"><i class="fa fa-envelope-o"></i> Messages
                   <span class="label label-success pull-right"><?php echo isset($showMsg->COUNT) ? $showMsg->COUNT : 0;?></span></a></li>
                 

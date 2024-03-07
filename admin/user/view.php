@@ -1,9 +1,9 @@
 <?php  
       if (!isset($_SESSION['ADMIN_USERID'])){
-      redirect(web_root."admin/index.php");
+      redirect("admin/index.php");
      }
 if(!$_SESSION['ADMIN_ROLE']=='Administrator'){
-  redirect(web_root."admin/index.php");
+  redirect("admin/index.php");
 }
   @$USERID = $_SESSION['ADMIN_USERID'];
     if($USERID==''){
@@ -20,7 +20,7 @@ if(!$_SESSION['ADMIN_ROLE']=='Administrator'){
         <div class="col-md-4">
          <a  data-target="#myModal" data-toggle="modal" href="" title="Click here to Change Image." >
             <img alt="" style="width:500px; height:400px;>"
-             title="" class="img-circle img-thumbnail isTooltip" src="<?php echo web_root.'admin/user/'. $singleuser->PICLOCATION;?>" data-original-title="Usuario"> 
+             title="" class="img-circle img-thumbnail isTooltip" src="<?php echo 'admin/user/'. $singleuser->PICLOCATION;?>" data-original-title="Usuario"> 
          </a>  
         </div>
         <div class="col-md-6">
