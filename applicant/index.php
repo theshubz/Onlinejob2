@@ -1,7 +1,7 @@
 <?php 
 require_once("../include/initialize.php");  
 if (!isset($_SESSION['APPLICANTID'])) {
-	redirect(web_root.'index.php');
+	redirect('index.php');
 }
 $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
 switch ($view) { 
