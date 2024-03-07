@@ -18,7 +18,7 @@ switch ($action) {
 function doSubmitApplication() { 
 	global $mydb;   
 		$jobid  = $_GET['JOBID'];
-		
+
 
 		$autonum = New Autonumber();
 		$applicantid = $autonum->set_autonumber('APPLICANT');
