@@ -9,7 +9,8 @@ switch ($action) {
 	case 'register' :
 	doRegister();
 	break;  
-
+    
+	
 	case 'login' :
 	doLogin();
 	break; 
