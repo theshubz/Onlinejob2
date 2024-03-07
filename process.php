@@ -209,15 +209,15 @@ function doLogin(){
 	$h_upass = sha1($upass);
  
  
-    $applicant = new Applicant();
+    $applicant = new ApplicantS();
     
     $res = $applicant->applicantAuthentication($email, $h_upass);
     if ($res==true) { 
 
-       	message("You are now successfully login!","success");
+       
      
          redirect("applicant/");
-     
+     	message("You are now successfully login!","success");
     }else{
     	 echo "Account does not exist! Please contact Administrator."; 
     } 
