@@ -4,7 +4,7 @@ require_once("../include/initialize.php");
  ?>
   <?php
   if(isset($_SESSION['ADMIN_USERID'])){
-    redirect(web_root."admin/index.php");
+    redirect("admin/index.php");
   }
   ?>
    
@@ -79,7 +79,7 @@ if(isset($_POST['btnLogin'])){
     $user = new User();
     $res = $user->userAuthentication($email, $h_upass);
     if ($res==true) { 
-       message("You logon as ".$_SESSION['ROLE'].".","success");
+       message("You login as ".$_SESSION['ROLE'].".","success");
 
         $_SESSION['ADMIN_USERID'] = $_SESSION['USERID'];
         $_SESSION['ADMIN_FULLNAME'] = $_SESSION['FULLNAME'] ;
@@ -94,7 +94,7 @@ if(isset($_POST['btnLogin'])){
         unset( $_SESSION['ROLE'] );
        
 
-         redirect(web_root."admin/index.php");
+         redirect("admin/index.php");
       // } 
     }else{
       message("Account does not exist! Please contact Administrator.", "error");
