@@ -71,14 +71,19 @@
 
   // echo "The current page name is ".curPageName();
 
-function currentpage(){
-		$this_page = $_SERVER['SCRIPT_NAME']; // will return /path/to/file.php
-	    $bits = explode('/',$this_page);
-	    $this_page = $bits[count($bits)-1]; // will return file.php, with parameters if case, like file.php?id=2
-	    $this_script = $bits[0]; // will return file.php, no parameters*/
-		 return $bits[3];
-	  
-	}
+  function currentpage() {
+    $this_page = $_SERVER['SCRIPT_NAME'];
+    $bits = explode('/', $this_page);
+    
+    // Check if index 3 exists in the array
+    if (isset($bits[3])) {
+        return $bits[3];
+    } else {
+        // Handle the case where index 3 doesn't exist
+        return 'Unknown'; // Or whatever default value you prefer
+    }
+}
+
 	function publiccurrentpage(){
 		$this_page = $_SERVER['SCRIPT_NAME']; // will return /path/to/file.php
 	    $bits = explode('/',$this_page);
