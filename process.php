@@ -215,9 +215,9 @@ function doLogin(){
     if ($res==true) { 
 
        
-     
-         redirect("applicant/");
-     	message("You are now successfully login!","success");
+     message("You are now successfully login!","success");
+         redirect("index.php/");
+     	
     }else{
     	 echo "Account does not exist! Please contact Administrator."; 
     } 
