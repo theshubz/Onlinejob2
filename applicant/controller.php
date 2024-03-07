@@ -1,7 +1,7 @@
 <?php
 require_once ("../include/initialize.php");
 	  if (!isset($_SESSION['APPLICANTID'])){
-      redirect(web_root."index.php");
+      redirect("index.php");
      }
 
 $action = (isset($_GET['action']) && $_GET['action'] != '') ? $_GET['action'] : '';
@@ -85,7 +85,7 @@ switch ($action) {
 						$applicant = New Applicants();
 						$applicant->APPLICANTPHOTO 			= $location;
 						$applicant->update($_SESSION['APPLICANTID']);
-						redirect(web_root."applicant/");
+						redirect("applicant/");
 						 
 							
 					}

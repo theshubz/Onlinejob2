@@ -4,7 +4,7 @@
         <div id="main-slider" class="flexslider">
             <ul class="slides">
               <li>
-                <img src="<?php echo web_root; ?>plugins/home-plugins/img/slides/1.jpg" alt="" />
+                <img src="plugins/home-plugins/img/slides/1.jpg" alt="" />
                 <div class="flex-caption">
                     
           <h3>Unlock Your Potential, Find Your Future!</h3> 
@@ -12,7 +12,7 @@
                 </div>
               </li>
               <li>
-                <img src="<?php echo web_root; ?>plugins/home-plugins/img/slides/2.jpg" alt="" />
+                <img src="plugins/home-plugins/img/slides/2.jpg" alt="" />
                 <div class="flex-caption">
                     <h3>Your Gateway to Professional Success.</h3> 
           <p>Success depends on work</p> 
@@ -90,7 +90,7 @@
             $cur = $mydb->loadResultList();
 
             foreach ($cur as $result) {
-              echo '<div class="col-md-3" style="font-size:15px;padding:5px">* <a href="'.web_root.'index.php?q=category&search='.$result->CATEGORY.'">'.$result->CATEGORY.'</a></div>';
+              echo '<div class="col-md-3" style="font-size:15px;padding:5px">* <a href="index.php?q=category&search='.$result->CATEGORY.'">'.$result->CATEGORY.'</a></div>';
             }
 
           ?>

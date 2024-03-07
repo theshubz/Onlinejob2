@@ -17,13 +17,13 @@ require_once("../include/initialize.php");
   
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-  <link rel="stylesheet" href="<?php echo web_root;?>bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
  
-  <link rel="stylesheet" href="<?php echo web_root;?>plugins/font-awesome/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css"> 
   
-  <link rel="stylesheet" href="<?php echo web_root;?>dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
 
-  <link rel="stylesheet" href="<?php echo web_root;?>plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
 
 
 </head>
@@ -98,16 +98,16 @@ if(isset($_POST['btnLogin'])){
       // } 
     }else{
       message("Account does not exist! Please contact Administrator.", "error");
-       redirect(web_root."admin/login.php"); 
+       redirect("admin/login.php"); 
     }
  }
  } 
  ?> 
 
 
-<script src="<?php echo web_root;?>plugins/jQuery/jQuery-2.1.4.min.js"></script>
-<script src="<?php echo web_root;?>bootstrap/js/bootstrap.min.js"></script>
-<script src="<?php echo web_root;?>plugins/iCheck/icheck.min.js"></script>
+<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
     $('input').iCheck({

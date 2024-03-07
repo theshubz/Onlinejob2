@@ -16,7 +16,7 @@
         <div class="panel panel-primary">
             <div class="panel-header">
                 <div style="border-bottom: 1px solid #ddd;padding: 10px;font-size: 20px;font-weight: bold;color: #000;margin-bottom: 5px;">
-                    <a href="<?php echo web_root.'index.php?q=viewjob&search='.$result->JOBID;?>"><?php echo $result->OCCUPATIONTITLE; ?></a>
+                    <a href="<?php echo 'index.php?q=viewjob&search='.$result->JOBID;?>"><?php echo $result->OCCUPATIONTITLE; ?></a>
                 </div>
             </div>
             <div class="panel-body contentbody">
@@ -52,7 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <a href="<?php echo web_root; ?>index.php?q=apply&job=<?php echo $result->JOBID;?>&view=personalinfo" class="btn btn-main btn-next-tab">Apply Now!</a>
+                        <a href="index.php?q=apply&job=<?php echo $result->JOBID;?>&view=personalinfo" class="btn btn-main btn-next-tab">Apply Now!</a>
                     </div>
                 </div>
             </div>

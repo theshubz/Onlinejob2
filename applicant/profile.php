@@ -53,7 +53,7 @@
                 <li class="<?php echo ($view=='appliedjobs' || $view=='') ? 'active': '';?>"><a href="'applicant/index.php?view=appliedjobs'; ?>"><i class="fa fa-list"></i> Applied Jobs
                    </a></li>
                   <li class="<?php echo ($view=='accounts') ? 'active': '';?>"><a href="'applicant/index.php?view=accounts'; ?>"><i class="fa fa-user"></i> Accounts </a></li>
-                <li class="<?php echo ($view=='message') ? 'active': '';?>"><a href="<?php echo web_root.'applicant/index.php?view=message'; ?>"><i class="fa fa-envelope-o"></i> Messages
+                <li class="<?php echo ($view=='message') ? 'active': '';?>"><a href="<?php echo 'applicant/index.php?view=message'; ?>"><i class="fa fa-envelope-o"></i> Messages
                   <span class="label label-success pull-right"><?php echo isset($showMsg->COUNT) ? $showMsg->COUNT : 0;?></span></a></li>
                 
               </ul>
@@ -100,8 +100,8 @@
     }
 ?>  
          <!--   <ul class="nav nav-tabs" id="myTab">
-        <li class="<?php echo  $_SESSION['appliedjobs']; ?>"><a href="<?php echo web_root.'applicant/index.php?view=appliedjobs'; ?>" >Applied Jobs</a></li> 
-        <li class="<?php echo  $_SESSION['accounts'];  ?>"><a href="<?php echo web_root.'applicant/index.php?view=accounts'; ?>" >Accounts</a></li> 
+        <li class="<?php echo  $_SESSION['appliedjobs']; ?>"><a href="<?php echo 'applicant/index.php?view=appliedjobs'; ?>" >Applied Jobs</a></li> 
+        <li class="<?php echo  $_SESSION['accounts'];  ?>"><a href="<?php echo 'applicant/index.php?view=accounts'; ?>" >Accounts</a></li> 
       </ul>
           
     
